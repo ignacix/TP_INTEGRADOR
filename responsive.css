@@ -1,0 +1,140 @@
+@media screen and (max-width:1000px) {
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*--------Header-------*/
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    nav{
+        display: none;
+    }
+    
+    #foto_quien_soy{
+        display: none;
+    }
+    
+
+    
+    h1{
+        
+        text-align: center;
+    }
+    
+    h3{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+
+    
+     /*--------Sección_Quien_Soy-------*/
+
+    #quien_soy{
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    #panel_izquierdo{    
+        width: 100%;
+        height: max-content;
+        
+    }
+    #panel_derecho{
+        background-color:#9e9d9c;
+        width: 100%;
+    }
+
+    #texto_quien_soy{
+        display: inline;
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin: 0%;
+        padding-left:20px;
+        padding-top:20px;
+        padding-right: 20px;
+        border: 0%;
+        
+    }
+
+
+/* -------Sección_Trabajos_y_Drones------- */
+
+
+    #trabajos_y_drones{
+        height: 100%;
+        width: auto;
+    }
+
+    #panel_izquierdo_trabajos_y_drones{
+        width: 100%;
+        height: max-content;
+    }
+    div#texto_trabajos_y_drones{
+        margin-top: 0%;
+        margin-left: 0%;
+        text-align: center;
+        height: auto;
+    }
+    #videos{
+        display:none;
+    }
+    div#texto_trabajos_y_drones h4#texto_no_responsivo{
+        display: none;
+    }
+    #caja_drones{
+        display: flex;
+        flex-flow:column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+    }
+    #dron_izquierda{
+        display: flex;
+        flex-flow:column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+    }
+    #dron_derecha{
+        display: flex;
+        flex-flow:column;
+        flex-wrap: nowrap;
+        width: auto;
+        height: 100%;
+    }
+    #contenedor_imagen_dron1{
+        margin: auto;
+        padding-top: 0%;
+        padding-left: 0%;
+    }
+    #contenedor_imagen_dron2{
+        margin: auto;
+        padding-top: 0%;
+        padding-left: 0%;
+    }
+    #texto_centrado{
+        margin: auto;
+        padding-left: 0%;
+    }
+    
+
+}
+
+@media screen and (min-width:1000px) {
+    header h3{
+        display: none;
+    }
+
+    div#texto_trabajos_y_drones h4#texto_responsivo{
+        display: none;
+    }
+}
