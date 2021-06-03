@@ -8,18 +8,24 @@
     height: 100%;
 }
 
-html, body, main, section{
+html, body, main{
     width: 100%;
     height: 100%;
+    font-family: 'Playfair Display', serif;
 }
+
+/* -------Header------- */
 
 header {
     color: white;
     background-color: black;
     text-align: center;
+    font-size: 30px;
     
 }
-
+h3{
+    float: right;
+}
 
 nav {
     position: fixed;
@@ -30,7 +36,7 @@ nav {
 
 ul li {    
     display: inline-flex;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 ul li a {
@@ -43,37 +49,225 @@ ul li a {
 
 }
 
-div {
-    width: 50%;
+body{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+
+
+
+/* -------Sección_Principal------- */
+section{
+    width: 100%;
     height: 100%;
-
-}
-div p {
-    color:black;
 }
 
-#principal {
-    background-image: url(https://scontent.ffdo1-1.fna.fbcdn.net/v/t1.6435-9/154444628_10223490683070885_7471468265429712496_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=19026a&_nc_ohc=TxJFDajuLIAAX_tw-f7&_nc_ht=scontent.ffdo1-1.fna&oh=6f34cfb86eaca0dd79b645b249e9ce94&oe=60D46E27);
+#fondo_principal {
+    background-image: url(imagenes/principal.jpg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    box-shadow: inset 0 0 150px black;
+}
+
+/* -------Sección_Quien_Soy------- */
+
+div {
+    float: left;
+    width: 50%;
+    height: 100%; 
+}
+.derecha{
+    float: right;
+    width: 50%;
+    height: 100%;   
+}
+.izquierda_chica{
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color:#363d40;
+}
+.derecha_grande{
+    float: right;
+    width: 60%;
+    height: 100%;
+}
+#panel_derecho{
+    background-color:#9e9d9c;
+}
+
+div#panel_derecho div h5{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+div#panel_derecho div p{
+    text-align:justify;
+    color: white;
+    font-size: 20px;
+}
+
+#texto_quien_soy{
+    display: inline-block;
+    background-color: #9e9d9c;
+    width: 400px;
+    height: 700px;
+    margin-top: 200px;
+    margin-left: 300px;
+    padding-left: 30px;
+    border: 8px;
+    border-left-style: solid;
+    border-color: white;
+}
+
+
+#nombre_de_quien_soy{
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+
+#foto_quien_soy{
+    padding-left: 65px;
+    border-radius: 0%;
+    clip-path: polygon(22% 0, 91% 0, 78% 100%, 12% 100%);
+    z-index: 0;
 }
 
 #quien_soy {
-
+    width: 100%;
+    height: 100%;
     background-color: honeydew;
 }
+
+div#panel_derecho div#texto_quien_soy h5{
+    color: black;
+    font-size: 40px;
+}
+
+
+/* -------Sección_Trabajos_y_Drones------- */
 
 #trabajos_y_drones {
     background-color: rgb(rgb(64, 78, 76), green, blue);
 }
 
+
+div#panel_izquierdo_trabajos_y_drones{
+    background-color: #363d40;
+    float: right;
+}
+
+div#videos {
+    background-color: #e8ebe5;
+    float: left;
+    height: 50%;
+    width: 50%;
+}
+
+div#videos #video_izquierda{
+    width: 280px;
+    height: 157px;
+    margin-top: 250px;
+    margin-left: 50px;
+    box-shadow: 0 0 50px #363d40;
+       
+}
+
+div#videos #video_centro{
+    width: 280px;
+    height: 157px;
+    margin-top: 50px;
+    box-shadow: 0 0 50px #363d40;
+    
+
+}
+
+div#videos #video_derecha{
+    width: 280px;
+    height: 157px;
+    margin-top: 250px;
+    box-shadow: 0 0 50px #363d40;
+    
+}
+
+
+#caja_drones {
+    background-color: #9e9d9c;
+    float: left;
+    height: 50%;
+    width: 50%;
+}
+
+div#texto_trabajos_y_drones{
+    background:none;
+    width: 600px;
+    height: 200px;
+    margin-top: 400px;
+    margin-left: 200px;
+    border: 8px;
+    border-right-style: solid;
+    border-color: white;
+}
+
+#contenedor_imagen_dron1{
+    width: 280px;
+    height: 157px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+#contenedor_imagen_dron2{
+    width: 280px;
+    height: 157px;
+    padding-top: 50px;
+    padding-left: 100px;
+
+}
+.texto_centrado{
+    text-align: center;
+    padding-left: 120px;
+    height: 200px;
+    width: 200;
+    margin-top: 20px;
+}
+
+div#texto_trabajos_y_drones h4{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+ 
+
+/* -------Contacto------- */
+
+
 #contacto {
     background-color: grey;
 }
-#lista_contacto ul li a{
-    color: black;
+
+#contacto_texto{
+    height: 50%;
+    width: 100%;
+}
+div#contacto_texto h4{
+    font-size: 100px;
+    margin-top: 200px;
+    text-align: center;
 }
 
-footer {
-    color:white;
-    background-color:black;
+#lista_de_contacto{
+    justify-content: space-between;
     text-align: center;
+    height: 50%;
+    width: 100%;
+
+}
+
+#lista_contacto ul li a{
+    color: black;
 }
