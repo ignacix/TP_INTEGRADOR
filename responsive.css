@@ -1,13 +1,33 @@
-@media screen and (max-width:1000px) {
+@media screen and (min-width:1001px) and (max-width:1280px){
+    #video_centro{
+        display: none;
+    }
+    #videos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        
+    }
+
+    section{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width:1001px) {
     html, body {
         height: 100%;
         width: 100%;
     }
 
+
+
     /*--------Header-------*/
     header{
         position: fixed;
         width: 100%;
+        z-index: 2;
     }
 
     nav{
@@ -15,7 +35,10 @@
     }
     
     #foto_quien_soy{
-        display: none;
+       
+        
+        height: 200px;
+        width: 200px;
     }
     
 
@@ -37,11 +60,24 @@
     #quien_soy{
         display: flex;
         flex-flow: column;
+        height: 91%;
 
     }
+    #foto_quien_soy{
+        padding-top: 5px;
+        clip-path: circle(50% at 50% 50%);
 
+    }
+    #nombre_de_quien_soy{
+        font-size: 50px;
+        padding-bottom: 5px ;
+    }
     #panel_izquierdo{    
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
         height: max-content;
         
     }
@@ -51,9 +87,9 @@
     }
 
     #texto_quien_soy{
-        display: inline;
-        width: auto;
-        height: auto;
+        display: flex;
+        width: 100%;
+        height: 100%;
         text-align: center;
         margin: 0%;
         padding-left:20px;
@@ -82,9 +118,8 @@
         text-align: center;
         height: auto;
     }
-    #videos{
-        display:none;
-    }
+
+
     div#texto_trabajos_y_drones h4#texto_no_responsivo{
         display: none;
     }
@@ -125,11 +160,23 @@
         margin: auto;
         padding-left: 0%;
     }
-    
+    #video_centro{
+        display: none;
+    }
+    #videos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
 
+    section{
+        width: 100%;
+        height: 100%;
+    }
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1001px) {
     header h3{
         display: none;
     }
@@ -137,4 +184,12 @@
     div#texto_trabajos_y_drones h4#texto_responsivo{
         display: none;
     }
+    
+    section{
+        width: 100%;
+        height: 100%;
+    }
+
 }
+
+

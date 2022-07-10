@@ -3,10 +3,7 @@
     padding: 0%;
 }
 
-.pantalla_completa {
-    width: 100%;
-    height: 100%;
-}
+
 
 html, body, main{
     width: 100%;
@@ -17,31 +14,36 @@ html, body, main{
 /* -------Header------- */
 
 header {
+    display:flex;
+    justify-content: center;
     color: white;
     background-color: black;
-    text-align: center;
-    font-size: 30px;
+    text-align: start;
+    font-size: 20px;
     
 }
+
 h3{
     float: right;
 }
 
 nav {
     position: fixed;
+    z-index: 2;
     text-align: center;
     width: 100%;
-    justify-content: center;
+    
+    
 }
 
 ul li {    
     display: inline-flex;
-    padding-top: 10px;
+
 }
 
 ul li a {
     justify-content: space-between;
-    color: white;
+    color:white;
     text-decoration: none;
     font-size: 30px ;
     padding-right: 20px;
@@ -59,17 +61,17 @@ body{
 
 
 /* -------Sección_Principal------- */
-section{
-    width: 100%;
-    height: 100%;
-}
+
 
 #fondo_principal {
+    display: flex;
+    width: 100%;
     background-image: url(imagenes/principal.jpg.jpg);
     background-repeat: no-repeat;
-    width: 100%;
     box-shadow: inset 0 0 150px black;
 }
+
+
 
 /* -------Sección_Quien_Soy------- */
 
@@ -90,11 +92,14 @@ div {
     background-color:#363d40;
 }
 .derecha_grande{
-    float: right;
+    
     width: 60%;
     height: 100%;
 }
 #panel_derecho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#9e9d9c;
 }
 
@@ -106,22 +111,26 @@ div#panel_derecho div h5{
 
 div#panel_derecho div p{
     text-align:justify;
-    color: white;
+    color: rgba(17, 2, 2, 0.986);
     font-size: 20px;
 }
 
 #texto_quien_soy{
-    display: inline-block;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    height: 80%;
+    padding-top: 100px;
+    width: 60%;
     background-color: #9e9d9c;
-    width: 400px;
-    height: 700px;
-    margin-top: 200px;
-    margin-left: 300px;
-    padding-left: 30px;
-    border: 8px;
-    border-left-style: solid;
-    border-color: white;
+    border: 5px;
+
 }
+#texto_quien_soy div{
+     width: 100%;
+}
+
+
 
 
 #nombre_de_quien_soy{
@@ -136,6 +145,7 @@ div#panel_derecho div p{
     border-radius: 0%;
     clip-path: polygon(22% 0, 91% 0, 78% 100%, 12% 100%);
     z-index: 0;
+  
 }
 
 #quien_soy {
@@ -145,6 +155,7 @@ div#panel_derecho div p{
 }
 
 div#panel_derecho div#texto_quien_soy h5{
+    
     color: black;
     font-size: 40px;
 }
@@ -157,83 +168,90 @@ div#panel_derecho div#texto_quien_soy h5{
 }
 
 
-div#panel_izquierdo_trabajos_y_drones{
+#panel_izquierdo_trabajos_y_drones{
     background-color: #363d40;
     float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 div#videos {
-    background-color: #e8ebe5;
+    background-color:  #9e9d9c;
+    display:flex;
+    flex-wrap: wrap;
     float: left;
     height: 50%;
     width: 50%;
 }
 
-div#videos #video_izquierda{
+ #video_izquierda{
     width: 280px;
     height: 157px;
-    margin-top: 250px;
-    margin-left: 50px;
+    margin-top: 30px;
+    margin-left: 60px;
+    padding-left: 10px;
     box-shadow: 0 0 50px #363d40;
        
 }
 
-div#videos #video_centro{
+ #video_centro{
     width: 280px;
     height: 157px;
-    margin-top: 50px;
+    padding-left: 10px;
+    margin-top: 25%;
     box-shadow: 0 0 50px #363d40;
     
 
 }
 
-div#videos #video_derecha{
-    width: 280px;
-    height: 157px;
-    margin-top: 250px;
-    box-shadow: 0 0 50px #363d40;
-    
-}
+
 
 
 #caja_drones {
-    background-color: #9e9d9c;
+    background-color: #e8ebe5;
     float: left;
+    display: flex;
     height: 50%;
     width: 50%;
+}
+
+#dron_izquierda{
+    justify-content: center;
 }
 
 div#texto_trabajos_y_drones{
     background:none;
     width: 600px;
     height: 200px;
-    margin-top: 400px;
-    margin-left: 200px;
     border: 8px;
     border-right-style: solid;
     border-color: white;
+}
+.dron{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #contenedor_imagen_dron1{
     width: 280px;
     height: 157px;
-    padding-top: 50px;
-    padding-left: 100px;
+
 }
 
 #contenedor_imagen_dron2{
     width: 280px;
     height: 157px;
-    padding-top: 50px;
-    padding-left: 100px;
 
 }
 .texto_centrado{
     text-align: center;
-    padding-left: 120px;
     height: 200px;
-    width: 200;
-    margin-top: 20px;
+    width: 100%;
+
 }
 
 div#texto_trabajos_y_drones h4{
@@ -271,3 +289,4 @@ div#contacto_texto h4{
 #lista_contacto ul li a{
     color: black;
 }
+
